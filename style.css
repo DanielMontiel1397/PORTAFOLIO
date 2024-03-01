@@ -1,0 +1,649 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+#header{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#header .contenedor-header{
+    width: 100%;
+    margin: auto 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+#header .contenedor-header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-right: 15px;
+    color: #9b0307;
+}
+
+
+#header .contenedor-header #menu-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#header .contenedor-header #menu-nav .seleccionado{
+    color: #c60a14;
+}
+
+#header .contenedor-header #menu-nav li a{
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+#header .contenedor-header #menu-nav li a:hover
+{
+    color: #c60a14;
+    border-bottom: 2px solid white;
+}
+
+#icono-nav{
+    display: none;
+}
+
+/* SECCION INICIO */
+#inicio{
+    background: linear-gradient(rgb(0,0,0,.7), rgba(0,0,0,.7)), url("./assets/00_Fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 70px 0;
+    width: 100%;
+}
+
+#inicio .contenedor-foto{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#inicio .contenedor-foto img{
+    width: 300px;
+    border-radius: 30px;
+    background-color: rgba(224, 219, 219, 0.911);
+    box-shadow: 10px 10px 25px 5px rgb(5, 5, 5);
+}
+
+#inicio .informacion-sobremi{
+    flex: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 55px;
+}
+
+#inicio .informacion-sobremi .informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#inicio .informacion-sobremi .informacion h3{
+    font-size: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#inicio .informacion-sobremi .informacion h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px
+}
+
+
+#inicio .informacion-sobremi h2 span{
+    font-size: 4rem;
+    color: #db0d1a;
+    margin-left: 10px;
+}
+
+#inicio .informacion-sobremi .informacion p{
+    padding: 0 15px;
+    font-size: 2.4rem;
+    text-align: justify;
+}
+
+#inicio .informacion-sobremi .botones-informacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+#inicio .informacion-sobremi a{
+    display: inline-block;
+    margin: 25px 0;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #ffffffd3;
+    transition: .5s;
+}
+
+#inicio .informacion-sobremi a:hover{
+    background-color: #db0d1a;
+}
+
+
+/* SECCION HABILIDADES */
+#habilidades{
+    background: linear-gradient(#eb5a5acc,rgba(33,16,16,.8)),url("./assets/02_Fondo2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#habilidades h3{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 3px solid gray;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+#habilidades .habilidad{
+    width: 90%;
+    margin: 10px auto;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+    padding: 10px 30px;
+}
+
+#habilidades .habilidad .informacion{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#habilidades .habilidad .barra{
+    width: 100%;
+    height: 7px;
+    background-color: gray;
+    border-radius: 3.5px;
+}
+
+
+#habilidades .habilidad .barra .progreso1{
+    background-color: #fff;
+    width: 95%;
+    height: 7px;
+    animation: progreso1 2s forwards;
+    border-radius: 3.5px;
+}
+
+#habilidades .habilidad .barra .progreso1::before{
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+}
+
+#habilidades .info-extra{
+    width: 100%;
+    list-style: circle;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,160px);
+    place-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* SECCION PORTAFOLIO */
+
+#portafolio{
+    background: linear-gradient(#4546a7cc,rgba(33,16,16,.8)),url("./assets/03_Fondo3.jpg");
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    padding: 100px 0;
+    color: white;
+}
+
+.titulo-seccion{
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 4px solid gray;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+
+}
+
+#portafolio .contenedor-temas{
+    outline: none;
+    width: 85%;
+    cursor: pointer;
+    list-style: none;
+    border: 2px solid gray;
+    border-radius: 6px;
+    transition: max-height 3s ease-out;
+}
+
+#portafolio .contenedor-temas .contenedor-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    transition: all 0.3s ease-out;
+}
+
+#portafolio .contenedor-temas .contenedor-titulo:hover{
+    background-color: #950000;
+}
+
+#portafolio .contenedor-temas .contenedor-titulo h4{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+#portafolio .contenedor-temas .contenedor-cursos{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos cursos */
+.contenedor-cursos ul{
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-items: center;
+    place-content: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.contenedor-cursos ul li{
+    border: 5px solid gray;
+    border-radius: 10px;
+}
+
+.contenedor-cursos .proyecto{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+}
+
+.contenedor-cursos .proyecto img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+
+}
+
+.contenedor-cursos .proyecto .info{
+    position: absolute;
+    font-size: 1.6rem;
+    background-color: rgba(0,0,0,.8);
+    color: rgba(255, 255, 255, 0.753);
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    opacity: 0;
+    left: -200px;
+    top: 0px;
+    transition: .5s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contenedor-cursos .proyecto .info h4{
+    text-align: justify;
+}
+
+.contenedor-cursos .proyecto .info a{
+    text-decoration: none;
+    width: 80px;
+    height: auto;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(0, 128, 0, 0.726);
+    transition: all 0.3s ease-out;
+}
+
+.contenedor-cursos .proyecto:hover .info{
+    opacity: 1;
+    left: 0;
+} 
+
+.contenedor-cursos .proyecto:hover img{
+    filter: grayscale(0);
+}
+
+
+.contenedor-cursos .proyecto:hover .info a:hover{
+    box-shadow: 0px 0px 10px 3px white;
+}
+
+
+/* SECCION ACTIVIDADES */
+#actividades{
+    width: 100%;
+    margin: 0;
+    padding: 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 15px;
+}
+
+#actividades .actividades-contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-self: center;
+    width: 100%;
+}
+
+#actividades .actividades-contenedor:nth-child(3) .informacion{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#actividades .actividades-contenedor:nth-child(3) .contenedor-imagenes{
+    grid-column: 1;
+}
+
+
+#actividades .actividades-contenedor .informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding: 10px 50px;
+}
+
+#actividades .actividades-contenedor .informacion h4{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+#actividades .actividades-contenedor .informacion p{
+    font-size: 2rem;
+    text-align: justify;
+    width: 80%;
+}
+
+#actividades .actividades-contenedor .contenedor-imagenes{
+    position: relative;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#actividades .imagen-galeria{
+    height: 350px;
+    width: 30%;
+    margin: 10px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+#actividades .imagen-galeria:nth-child(1){
+    transform: translate(100px,30px);
+    rotate: -5deg;
+}
+
+#actividades .imagen-galeria:nth-child(3){
+    transform: translate(-100px,30px);
+    z-index: -1;
+    rotate: 5deg;
+}
+
+#actividades .contenedor-imagenes:hover .imagen-galeria:nth-child(1){
+    transform: translate(0px,0px);
+    rotate: 0deg;
+}
+
+#actividades .contenedor-imagenes:hover .imagen-galeria:nth-child(3){
+    transform: translate(0px,0px);
+    rotate: 0deg;
+}
+
+/* SECCION CONTACTO */
+#contacto{
+    height: 100vh;
+    padding: 110px 0 0;
+}
+#contacto h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+footer .redes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+footer a:hover{
+    color: #d6231c;
+}
+/* RESPONSIVE */
+@media (max-width: 800px){
+
+    /* MENU */
+
+    #header{
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    #header .contenedor-header{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 25px;
+        position: relative;
+    }
+
+    #header .responsive{
+        display: block;
+        background-color: rgba(0,0,0,.8);
+        width: 100%;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        padding: 0 0;
+        transition: 3s;
+    }
+
+    .navegador{
+        display: none;
+    }
+
+
+    #header .responsive #menu-nav{
+        display: block !important;
+        text-align: center;
+    }
+    .responsive #menu-nav li{
+        margin: 5px 0;
+    }
+
+    #header .responsive #menu-nav li a{
+        font-size: 2.4rem;
+    }
+
+    #icono-nav{
+        display: block;
+        color: white;
+        font-size: 3rem;
+    }
+
+    /* INICIO */
+    #inicio{
+        flex-direction: column;
+    }
+
+    #inicio .informacion-sobremi .botones-informacion{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #inicio .informacion-sobremi{
+        padding: 10px 0;
+    }
+
+    #inicio .informacion-sobremi a{
+        margin: 10px 0;
+        width: 60%;
+
+    }
+
+    /* SOBRE MI */
+    /* HABILIDADES */
+
+    #habilidades .habilidad{
+        padding: 10px 0;
+    }
+    /* PORTAFOLIO */
+
+    /* ACTIDADES */
+    #actividades .actividades-contenedor{
+        grid-template-columns: 100%;
+    }
+
+    #actividades .actividades-contenedor .informacion{
+        padding: 10px 15px;
+    }
+
+    #actividades .actividades-contenedor:nth-child(3) .informacion{
+        grid-column: 1;
+    }
+
+    #actividades .actividades-contenedor .informacion p{
+        width: 100%;
+    }
+
+    /* imagenes */
+    #actividades .imagen-galeria:nth-child(1){
+        transform: translate(0,0);
+        rotate: 0deg;
+    }
+    
+    #actividades .imagen-galeria:nth-child(3){
+        transform: translate(0,0);
+        z-index: 0;
+        rotate: 0deg;
+    }
+
+    #actividades .actividades-contenedor .contenedor-imagenes{
+        width: 100%;
+        padding: 0;
+    }
+
+    #actividades .imagen-galeria{
+        width: 20%;
+    }
+
+    #actividades .imagen-galeria:hover{
+        width: 40%;
+    }
+
+}

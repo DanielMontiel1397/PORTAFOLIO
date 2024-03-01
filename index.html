@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+
+        <div class="contenedor-header">
+
+            <h1>Portafolio</h1>
+    
+            <nav class="navegador">
+    
+                <ul id="menu-nav">
+                    <li> <a href="#inicio" onclick="seleccionado(this)" class="seleccionado">Inicio</a> </li>
+                    <li> <a href="#habilidades" onclick="seleccionado(this)">Habilidades</a> </li>
+                    <li> <a href="#portafolio" onclick="seleccionado(this)">Portafolio</a> </li>
+                    <li> <a href="#actividades" onclick="seleccionado(this)">Actividades</a> </li>
+                    <li> <a href="#contacto" onclick="seleccionado(this)">Contacto</a> </li>
+                </ul>
+    
+            </nav>
+    
+            <div id="icono-nav" onclick="responsiveMenu()" >
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+        </div>
+
+    </header>
+    
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+
+        <div class="contenedor-foto">
+            <img src="./assets/01_Foto perfil.jpg" alt="">
+        </div>
+
+        <div class="informacion-sobremi">
+
+            <div class="informacion">
+                <h3>Desarrollador Web</h3>
+                <h2>Hola, soy <span>Daniel Ponce</span></h2>
+                <p>Egresado de ingenieria mecatronica, a lo largo de mi carrera, he adquirido habilidades técnicas en ingeniería mecánica, electrónica y programación, y recientemente he ampliado mi conocimiento con cursos especializados en desarrollo web front-end.
+                Mi enfoque multidisciplinario mepermite abordar proyectos desde unaperspectiva integral, combinando mishabilidades de mecatrónica con lacapacidad de crear interfaces deusuario funcionales. Poseo experienciapráctica en HTML, CSS y JavaScript.</p>
+            </div>
+
+            <div class="botones-informacion">
+                <a href="#">Descargar CV</a>
+                <a href="#portafolio">Portafolio</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section id="habilidades">
+        <h3>HABILIDADES</h3>
+
+        <div class="habilidad">
+            <div class="informacion">
+                <p>HTML y CSS</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra ">
+                <div id="html" class=""></div>
+            </div>
+            <ul class="info-extra">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>FLEXBOX</li>
+                <li>GRID</li>
+                <li>RESPONSIVE</li>
+            </ul>
+        </div>
+
+        <div class="habilidad">
+            <div class="informacion">
+                <p>JavaScript</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra ">
+                <div id="html" class=""></div>
+            </div>
+            <ul class="info-extra">
+                <li>Operadores</li>
+                <li>Ciclos</li>
+                <li>Arrays</li>
+                <li>Objetos</li>
+                <li>Estructuras</li>
+                <li>Funciones</li>
+                <li>Manipulación del DOM</li>
+                <li>Métodos</li>
+                <li>Clases</li>
+                <li>IndexDB</li>
+                <li>Promises</li>
+            </ul>
+        </div>
+
+        <div class="habilidad">
+            <div class="informacion">
+                <p>PHP</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra ">
+                <div id="html" class=""></div>
+            </div>
+            <ul class="info-extra">
+                <li>Operadores</li>
+                <li>Condicionales</li>
+                <li>Ciclos</li>
+                <li>Funciones</li>
+                <li>Formularios</li>
+                <li>Direccionar páginas</li>
+                <li>Manejo de sesiones</li>
+            </ul>
+        </div>
+
+        <div class="habilidad">
+            <div class="informacion">
+                <p>GIT</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra ">
+                <div id="html" class=""></div>
+            </div>
+            <ul class="info-extra">
+                <li>Commits</li>
+                <li>Clonar repositorio</li>
+                <li>Subir a repositorio</li>
+                <li>Navegar entre commits</li>
+            </ul>
+        </div>
+
+        <div class="habilidad">
+            <div class="informacion">
+                <p>HTML y CSS</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra ">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCIN PORTAFOLIO -->
+    <section id="portafolio">
+        <h2 class="titulo-seccion">PORTAFOLIO</h2>
+
+        <details class="contenedor-temas">
+            <summary class="contenedor-titulo">
+                <h4>JavaScript</h4>
+            </summary>
+            <nav class="contenedor-cursos">
+
+                <!-- Lista de proyectos -->
+                    <ul>
+                        
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/JS01_Carrito-Compras.png" alt="Proyecto Carrito de Compras">
+                                <div class="info">
+
+                                    <h4>En esta práctica se realizó el llenado de un carrito de compras con diferentes cursos, pudiendo agregar más de un mismo curso, borrar cursos y vaciar carrito</h4>
+                                    <p>Práctica Curso Udemy</p>
+
+                                    <a href="https://danielmontiel1397.github.io/00_JavaScript/00_Practicas-Curso-Udemy/00_Proyecto-Carrito-de-Compras/" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/JS02_Validacion-Formulario.png" alt="Práctica Validación Formulario">
+                                <div class="info">
+
+                                    <h4>En esta práctica se realizó una validación de llenado correcto de campos de envio de email. Se usó manipulación del DOM, objetos y funciones para la realización de esta práctica.</h4>
+                                    <p>Práctica Curso Udemy</p>
+
+                                    <a href="https://danielmontiel1397.github.io/00_JavaScript/00_Practicas-Curso-Udemy/01_Proyecto-Simulador-Envio-Emails/" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/JS03_Filtrar-Buscar.png" alt="">
+                                <div class="info">
+
+                                    <h4>En esta práctica se realizo un filtro de busqueda para distintos modelos de auto, filtrando por varias categorías. En esta práctica se usó arrays, manipulación del DOM, objetos y funciones</h4>
+                                    <p>Práctica Curso Udemy</p>
+
+                                    <a href="https://danielmontiel1397.github.io/00_JavaScript/00_Practicas-Curso-Udemy/02_Proyecto-Filtrar-Buscar/" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/JS04_Cotizador-Seguro.png" alt="">
+                                <div class="info">
+
+                                    <h4>En esta práctica se realizó un cotizador de seguro de autos dependiendo del año, marca y tipo de seguro. Para está práctica se usaron funciones constructoras, prototypes, manipulación del DOM y funciones.</h4>
+                                    <p>Práctica Curso Udemy</p>
+
+                                    <a href="https://danielmontiel1397.github.io/00_JavaScript/00_Practicas-Curso-Udemy/03_Proyecto-Cotizador-con-Prototypes/" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/JS05_Administrador-Presupuesto.png" alt="Práctica Administrador de presupuesto">
+                                <div class="info">
+
+                                    <h4>En esta práctica se realizó un administrador de presupuesto, preguntandole al usuario su presupuesto y asi poder agregando o eliminando gastos que afecten al presupuesto total. En esta practica se usaron clases con sus propiedades y metodos y asi instanciar objetos para cada usuario.</h4>
+                                    <p>Práctica Curso Udemy</p>
+
+                                    <a href="https://danielmontiel1397.github.io/00_JavaScript/00_Practicas-Curso-Udemy/04_Proyecto-Administrador-Presupuesto-con-Clases/" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/JS06_Administrador-Citas.png" alt="Práctica Administrador de Citas">
+                                <div class="info">
+
+                                    <h4>En esta práctica se realizó un administrador de citas, pudiendo agregar varias citas, validando el llenado de apartados al igual como poder editar las citas. En esta práctica se usaron clases para la interfaz de usuario y almacenamiento de citas, al igual como objetos previos para llenarlos antes de guardar la cita en el objeto instanciado.</h4>
+                                    <p>Práctica Curso Udemy</p>
+
+                                    <a href="https://danielmontiel1397.github.io/00_JavaScript/00_Practicas-Curso-Udemy/05_Proyecto-Administrar-Citas/" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/JS07_Práctica-Platzy-Tienda.png" alt="Práctica Platzi Tienda">
+                                <div class="info">
+
+                                    <h4>Esta práctica se realizó en el Curso práctico JS de Platzi, donde se realizó la visualización de productos y carrito de compras, asi como un menu.</h4>
+                                    <p>Práctica Curso Udemy</p>
+
+                                    <a href="https://danielmontiel1397.github.io/00_JavaScript/01_Practica-Curso-Platzi-JavaScript-Frontend-Developer/" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/P01_Inicio-Wikipedia.png" alt="">
+                                <div class="info">
+
+                                    <h4>RELLENAR</h4>
+                                    <p>Diseño web</p>
+
+                                    <a href="#" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                    </ul>
+            </nav>
+        </details>
+
+        <details class="contenedor-temas">
+            <summary class="contenedor-titulo">
+                <h4>HTML Y CSS</h4>
+            </summary>
+            <nav class="contenedor-cursos">
+
+                <!-- Lista de proyectos -->
+                    <ul>
+                        
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/P01_Inicio-Wikipedia.png" alt="">
+                                <div class="info">
+
+                                    <h4>En esta página se realizó un clone de la página de inicio de Wikipedia</h4>
+                                    <p>Diseño web</p>
+
+                                    <a href="https://danielmontiel1397.github.io/03_Ejercicios-HTML-CSS-JavaScript/00_Clone-Wikipedia-Inicio/" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+ 
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/P02_Ejercicio-Tarjeta.png" alt="">
+                                <div class="info">
+
+                                    <h4>En esta página se realizó una tarjeta poniendo en práctica posiciones relativas y absolutas</h4>
+
+                                    <p>Diseño web</p>
+
+                                    <a href="https://danielmontiel1397.github.io/03_Ejercicios-HTML-CSS-JavaScript/01_Ejercicio-Tarjeta/" class="proyecto" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/P03_Ejercicio-Card.png" alt="">
+                                <div class="info">
+
+                                    <h4>En esta página se realizó una tarjeta poniendo en práctica estilos CSS </h4>
+                                    <p>Diseño web</p>
+
+                                    <a href="https://danielmontiel1397.github.io/03_Ejercicios-HTML-CSS-JavaScript/02_Ejercicio-Card/" class="proyecto" target="_blank">Abrir 
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/P04_Ejercicio-Inicio-Sesion.png" alt="">
+                                <div class="info">
+
+                                    <h4>En esta práctica se realizó una pestaña de login para poner en práctica animaciones y pseudoclases.</h4>
+                                    <p>Diseño web</p>
+
+                                    <a href="https://danielmontiel1397.github.io/03_Ejercicios-HTML-CSS-JavaScript/03_Ejercicio-Inicio-Sesion/" class="proyecto" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="proyecto">
+                                <img src="./assets/P05_Ejercicio-Formulario.png" alt="">
+                                <div class="info">
+
+                                    <h4>En esta práctica se realizo un formulario, poniendo en práctica estilos CSS, animaciones con apoyo de JS y pseudoclases.</h4>
+                                    <p>Diseño web</p>
+
+                                    <a href="https://danielmontiel1397.github.io/03_Ejercicios-HTML-CSS-JavaScript/04_Ejercicio-Formulario-Registro/" class="proyecto" target="_blank">Abrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+            </nav>
+        </details>
+
+        <details class="contenedor-temas">
+            <summary class="contenedor-titulo">
+                <h4>HTML, CSS y JavaScript</h4>
+            </summary>
+            <nav class="contenedor-cursos">
+
+                <!-- Lista de proyectos -->
+                    <ul>
+                        
+                        <li>
+                            <a href="#" class="proyecto">
+ 
+                                <div class="overlay"></div>
+                                <img src="./assets/00_Fondo.jpg" alt="">
+                                <div class="info">
+                                    <h4>Descripcion del proyecto</h4>
+                                    <p>Diseño web</p>
+                                </div>
+
+                            </a>
+                        </li>
+
+                    </ul>
+            </nav>
+        </details>
+
+    </section>
+
+    <!-- SECCION ACTIVIDADES -->
+    <section id="actividades">
+        <h2 class="titulo-seccion">INTERESES</h2>
+
+        <div class="actividades-contenedor">
+
+            <div class="informacion">
+                <h4>Senderismo</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem dolor non aliquam aut minus ducimus corrupti eveniet, fugiat vel explicabo fugit temporibus voluptates sed officiis recusandae magnam. Doloribus, molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque temporibus dicta aliquam voluptate veritatis fuga at. Corrupti officiis similique magnam ab cum dignissimos dolores nemo perspiciatis autem illum! Sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum ad obcaecati maxime. Eum dolore repellat esse provident, velit nulla numquam aut minus dolor et sapiente asperiores nisi officia maxime!</p>
+            </div>
+
+            <div class="contenedor-imagenes">
+                <img src="./assets/G02.jpeg" alt="" class="imagen-galeria">
+                <img src="./assets/G03.jpeg" alt="" class="imagen-galeria">
+                <img src="./assets/G04.jpeg" alt="" class="imagen-galeria">
+            </div>
+
+        </div>
+
+        <div class="actividades-contenedor">
+
+            <div class="informacion">
+                <h4>Senderismo</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem dolor non aliquam aut minus ducimus corrupti eveniet, fugiat vel explicabo fugit temporibus voluptates sed officiis recusandae magnam. Doloribus, molestias!</p>
+            </div>
+
+            <div class="contenedor-imagenes">
+                <img src="./assets/G07.jpeg" alt="" class="imagen-galeria">
+                <img src="./assets/G09.jpeg" alt="" class="imagen-galeria">
+                <img src="./assets/G08.jpeg" alt="" class="imagen-galeria">
+            </div>
+
+        </div>
+
+        <div class="actividades-contenedor">
+
+            <div class="informacion">
+                <h4>Senderismo</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem dolor non aliquam aut minus ducimus corrupti eveniet, fugiat vel explicabo fugit temporibus voluptates sed officiis recusandae magnam. Doloribus, molestias!</p>
+            </div>
+
+            <div class="contenedor-imagenes">
+                <img src="./assets/G07.jpeg" alt="" class="imagen-galeria">
+                <img src="./assets/G09.jpeg" alt="" class="imagen-galeria">
+                <img src="./assets/G08.jpeg" alt="" class="imagen-galeria">
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3>CONTACTO</h3>
+    </section>
+
+    <footer>
+
+        <p>Todos los derechos Reservados - 2024</p>
+
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
