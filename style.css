@@ -27,7 +27,7 @@ body{
 
 #header .contenedor-header{
     width: 100%;
-    margin: auto 20px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -109,6 +109,12 @@ body{
     justify-content: center;
     padding: 10px 20px;
     margin-top: 55px;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+#inicio .opacidad{
+    opacity: 1;
 }
 
 #inicio .informacion-sobremi .informacion{
@@ -343,7 +349,7 @@ body{
     width: 100%;
     list-style: circle;
     display: grid;
-    grid-template-columns: repeat(auto-fill,160px);
+    grid-template-columns: repeat(auto-fill,130px);
     place-content: center;
     gap: 10px;
     margin-top: 15px;
@@ -491,6 +497,8 @@ body{
     border-radius: 50%;
     background-color: #2ab6ae;
 }
+
+
 
 .contenedor-cursos .proyecto:hover .info{
     opacity: 1;

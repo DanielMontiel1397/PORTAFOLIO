@@ -15,7 +15,6 @@ function seleccionado(link){
     seleccion[1].classList.remove("seleccionado");
     seleccion[2].classList.remove("seleccionado");
     seleccion[3].classList.remove("seleccionado");
-    seleccion[4].classList.remove("seleccionado");
 
     link.classList.add('seleccionado');
 
@@ -29,7 +28,6 @@ window.onscroll = ()=>{
 
 function efectoHabilidades(){
     const habilidad = document.querySelector("#habilidades");
-    console.log(habilidad.getBoundingClientRect().top);
     const distancia = window.innerHeight - habilidad.getBoundingClientRect().top;
 
     if(distancia>=300){
@@ -50,4 +48,26 @@ function efectoHabilidades(){
         document.querySelector("#c").classList.remove("progreso7");
     }
 
+    const inicio = document.querySelector('#inicio');
+    const informacion = document.querySelector('.informacion-sobremi');
+
+    if(inicio.getBoundingClientRect().bottom >= 200){
+        informacion.classList.add('opacidad');
+    } else{
+        informacion.classList.remove('opacidad');
+    }
+
 }
+
+addEventListener('DOMContentLoaded',()=>{
+    const inicio = document.querySelector('#inicio');
+    const informacion = document.querySelector('.informacion-sobremi');
+    console.log(inicio.getBoundingClientRect().bottom);
+    let height = window.innerHeight;
+    let distanciaInicio = height - inicio.getBoundingClientRect().top;
+
+    if(distanciaInicio>=300){
+        informacion.classList.add('opacidad');
+    }
+
+})
