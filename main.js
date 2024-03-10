@@ -59,7 +59,7 @@ function efectoHabilidades(){
 
 }
 
-addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded',()=>{
     const inicio = document.querySelector('#inicio');
     const informacion = document.querySelector('.informacion-sobremi');
     console.log(inicio.getBoundingClientRect().bottom);
